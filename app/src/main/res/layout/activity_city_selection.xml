@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sunrise_bg"
+    android:id="@+id/city_select">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="@string/select_city"
+        android:textColor="#2E305B"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/search_bg"
+        android:hint="@string/city_name_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:inputType="text"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_select"
+        android:textColor="@color/white"
+        android:background="@drawable/search_bg"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/et_search" />
+
+</RelativeLayout>

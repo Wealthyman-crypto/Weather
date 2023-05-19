@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sunrise_bg"
+    android:id="@+id/my_view">
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_name"
+        android:textColor="#040a1d"
+        android:textSize="24sp"
+        android:fontFamily="@font/lato_black"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_time_of_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_day"
+        android:textColor="#040a1d"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_below="@+id/tv_city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv_weather_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_below="@+id/tv_time_of_day"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp"
+        android:textColor="#040a1d"
+        android:textSize="30sp"
+        android:fontFamily="@font/lato_black"
+        android:layout_below="@+id/iv_weather_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wind_speed"
+        android:textColor="#040a1d"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_below="@+id/tv_temperature"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hourly_weather"
+        android:layout_width="400dp"
+        android:layout_height="118dp"
+        android:layout_below="@+id/tv_wind"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal" />
+
+    <TextView
+        android:id="@+id/tv_weekly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weekly_weather"
+        android:textColor="#ede6bb"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_light"
+        android:layout_below="@+id/rv_hourly_weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_daily_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/tv_weekly"/>
+
+</RelativeLayout>

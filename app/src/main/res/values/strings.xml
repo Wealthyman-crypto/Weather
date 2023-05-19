@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Weather 2</string>
+    <string name="btn_select">Search city</string>
+    <string name="city_name_hint">Enter your city</string>
+    <string name="select_city">Select city</string>
+    <string name="city">Your city</string>
+    <string name="time_of_day">Day</string>
+    <string name="temp_now">Temp</string>
+    <string name="wind">Wind</string>
+    <string name="speed_wind">Speed wind</string>
+    <string name="wind_icon">Wind</string>
+    <string name="weather_image">Weather</string>
+    <string name="weather_for_24_hours">Weather for 24 hours</string>
+    <string name="weekly_weather">Weekly weather</string>
+    <string name="wind_speed">Wind: 10 km/h</string>
+    <string name="temp">20°C</string>
+    <string name="time_day">Night</string>
+    <string name="city_name">City Name</string>
+</resources>
